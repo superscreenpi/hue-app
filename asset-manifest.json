@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-app-template/static/css/main.c73e9ef2.chunk.css",
-    "main.js": "/react-app-template/static/js/main.326e47a6.chunk.js",
-    "main.js.map": "/react-app-template/static/js/main.326e47a6.chunk.js.map",
-    "runtime-main.js": "/react-app-template/static/js/runtime-main.e461483d.js",
-    "runtime-main.js.map": "/react-app-template/static/js/runtime-main.e461483d.js.map",
-    "static/css/2.a39ff385.chunk.css": "/react-app-template/static/css/2.a39ff385.chunk.css",
-    "static/js/2.925ead9b.chunk.js": "/react-app-template/static/js/2.925ead9b.chunk.js",
-    "static/js/2.925ead9b.chunk.js.map": "/react-app-template/static/js/2.925ead9b.chunk.js.map",
-    "index.html": "/react-app-template/index.html",
-    "precache-manifest.938b18eee5d46f225dc7a66f6964038b.js": "/react-app-template/precache-manifest.938b18eee5d46f225dc7a66f6964038b.js",
-    "service-worker.js": "/react-app-template/service-worker.js",
-    "static/css/2.a39ff385.chunk.css.map": "/react-app-template/static/css/2.a39ff385.chunk.css.map",
-    "static/css/main.c73e9ef2.chunk.css.map": "/react-app-template/static/css/main.c73e9ef2.chunk.css.map",
-    "static/js/2.925ead9b.chunk.js.LICENSE.txt": "/react-app-template/static/js/2.925ead9b.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/react-app-template/static/media/fa-solid-900.ee09ad75.woff"
+    "main.css": "/hue-app/static/css/main.c73e9ef2.chunk.css",
+    "main.js": "/hue-app/static/js/main.7ab1b79e.chunk.js",
+    "main.js.map": "/hue-app/static/js/main.7ab1b79e.chunk.js.map",
+    "runtime-main.js": "/hue-app/static/js/runtime-main.2f99d250.js",
+    "runtime-main.js.map": "/hue-app/static/js/runtime-main.2f99d250.js.map",
+    "static/css/2.7f12bc4e.chunk.css": "/hue-app/static/css/2.7f12bc4e.chunk.css",
+    "static/js/2.1cb878f0.chunk.js": "/hue-app/static/js/2.1cb878f0.chunk.js",
+    "static/js/2.1cb878f0.chunk.js.map": "/hue-app/static/js/2.1cb878f0.chunk.js.map",
+    "index.html": "/hue-app/index.html",
+    "precache-manifest.0da90f65c41820b6af259ade871c2508.js": "/hue-app/precache-manifest.0da90f65c41820b6af259ade871c2508.js",
+    "service-worker.js": "/hue-app/service-worker.js",
+    "static/css/2.7f12bc4e.chunk.css.map": "/hue-app/static/css/2.7f12bc4e.chunk.css.map",
+    "static/css/main.c73e9ef2.chunk.css.map": "/hue-app/static/css/main.c73e9ef2.chunk.css.map",
+    "static/js/2.1cb878f0.chunk.js.LICENSE.txt": "/hue-app/static/js/2.1cb878f0.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/hue-app/static/media/fa-solid-900.ee09ad75.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.e461483d.js",
-    "static/css/2.a39ff385.chunk.css",
-    "static/js/2.925ead9b.chunk.js",
+    "static/js/runtime-main.2f99d250.js",
+    "static/css/2.7f12bc4e.chunk.css",
+    "static/js/2.1cb878f0.chunk.js",
     "static/css/main.c73e9ef2.chunk.css",
-    "static/js/main.326e47a6.chunk.js"
+    "static/js/main.7ab1b79e.chunk.js"
   ]
 }
