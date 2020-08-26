@@ -1,18 +1,25 @@
-import { initialState as exampleState } from './example/state';
 import { combineReducers } from 'redux';
-import { exampleReducer } from './example/reducers';
-import { useSelector } from 'react-redux';
+import { actions as bridgesActions, reducer as bridgesReducer } from './bridges';
+import { configureStore } from '@reduxjs/toolkit';
+import { useDispatch, useSelector } from 'react-redux';
 
-export const initialState = {
-  example: exampleState,
-};
-
-export type GlobalState = typeof initialState;
-
-export const rootReducer = combineReducers({
-  example: exampleReducer,
+const reducer = combineReducers({
+  bridges: bridgesReducer,
 });
 
-export function useGlobal<T>(selector: (state: GlobalState) => T): T {
-  return useSelector<GlobalState, T>(selector);
+// TODO: Persist?
+export const store = configureStore({
+  reducer,
+});
+
+export type AppDispatch = typeof store.dispatch;
+
+export const useAppDispatch = (): ReturnType<typeof useDispatch> => useDispatch<AppDispatch>();
+
+export type State = ReturnType<typeof reducer>;
+
+export function useAppState<T>(selector: (state: State) => T): T {
+  return useSelector<State, T>(selector);
 }
+
+export const actions = { ...bridgesActions };

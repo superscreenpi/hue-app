@@ -4,12 +4,8 @@ import { App } from './App';
 import * as serviceWorker from './serviceWorker';
 import './style.scss';
 import { HashRouter } from 'react-router-dom';
-import { persist } from '@superscreenpi/redux-persist-localstorage/dist';
-import { initialState, rootReducer } from './store';
-import { createStore } from 'redux';
+import { store } from './store';
 import { Provider } from 'react-redux';
-
-const store = createStore(rootReducer, initialState, persist('launcher/state'));
 
 ReactDOM.render(
   <React.StrictMode>

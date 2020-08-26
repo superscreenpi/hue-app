@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "@reduxjs/toolkit": "^1.4.0",
     "@superscreenpi/redux-persist-localstorage": "^1.0.1",
     "@superscreenpi/uikit": "^0.4.1",
     "@testing-library/jest-dom": "^4.2.4",
