@@ -1,10 +1,11 @@
 import React, { ReactNode, useEffect, useState } from 'react';
-import { useAppState } from '../../store';
+import { actions, useAppDispatch, useAppState } from '../../store';
 import { Bridge } from '../../store/bridges';
 
 export const BridgesView: React.FC = () => {
-  useAppState((state) => state.bridges.bridges);
+  const connected = useAppState((state) => state.bridges.bridges);
   const [detected, setDetected] = useState<Bridge[]>();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     fetch('https://discovery.meethue.com')
@@ -35,7 +36,34 @@ export const BridgesView: React.FC = () => {
       </div>
     );
   } else {
-    // TODO: Display detected bridges and their status
+    content = (
+      <>
+        {detected.map(({ id, internalipaddress }) => (
+          <div key={id} className="field">
+            <label>
+              <i className="fas fa-network-wired" /> {internalipaddress}
+            </label>
+            {connected.find((b) => b.id === id) ? (
+              <i className="fas fa-check" />
+            ) : (
+              <button
+                className="button"
+                onClick={(): void => {
+                  dispatch(
+                    actions.registerBridge({
+                      id,
+                      internalipaddress,
+                    }),
+                  );
+                }}
+              >
+                Connect
+              </button>
+            )}
+          </div>
+        ))}
+      </>
+    );
   }
 
   return (
